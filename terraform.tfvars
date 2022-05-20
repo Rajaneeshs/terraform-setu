@@ -11,6 +11,7 @@ aws_azs = ["us-east-1a", "us-east-1b"]
 aws_vpc_name = 	"Terraform-Test"
 
 
+
 # The CIDR block for the VPC
 aws_vpc_cidr = "10.13.0.0/16"
 
@@ -33,3 +34,5 @@ rds_multi_az = true
 rds_instance_type = "db.m4.large"
 lt_instance_type = "c5.large"
 
+servB_count = 2
+servC_count = 2
