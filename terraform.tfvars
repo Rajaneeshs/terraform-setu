@@ -16,9 +16,11 @@ aws_vpc_cidr = "10.13.0.0/16"
 
 # The default SSH key for all instances (the Key must exist in this region)
 aws_key_name = "Prod"
+instance_size = "c5.large"
 
 
 volume_size = 40
+volume_type = "gp2"
 ami_id = "ami-1234567890"
 project_name = "Prod-Terraform"
 
@@ -27,6 +29,7 @@ rds_user_cred = {
 name = "dbuser"
 password = "Terraform1234"
 }
+rds_multi_az = true
 rds_instance_type = "db.m4.large"
 lt_instance_type = "c5.large"
 

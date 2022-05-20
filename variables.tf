@@ -17,11 +17,12 @@ variable "volume_size" {}
 variable "volume_type" {}
 variable "lt_instance_type" {}
 variable "project_name" {}
-variable "route53_zone_id" {}
-variable "dns_record" {}
+variable "var.servB_count" {}
+variable "var.servC_count" {}
+ 
 variable "ami_id" {
 type = string 
-description = "Valid EAA minimal ubuntu AMI"
+description = "Valid  ubuntu AMI"
 validation {
 condition     = can(regex("^ami-", var.ami_id))
 error_message = "The ami_id must be valid AMI id of the form ami- ."
